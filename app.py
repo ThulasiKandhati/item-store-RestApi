@@ -14,7 +14,6 @@ app.secret_key = 'tkandhati'
 api = Api(app)
 jwt = JWT(app,authenticate,identity)
 
-	
 
 api.add_resource(Item,'/item/<string:name>')
 api.add_resource(itemList,'/items')
